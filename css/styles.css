@@ -343,22 +343,26 @@ img {
 
 .social-link {
   display: flex;
+  align-items: center;
+}
+
+.social-link-item {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .social-link-list .social-link + .social-link {
   margin-left: 10px;
 }
 
-.social-link:hover .icon-team,
-.social-link:focus .icon-team,
-.social-link:hover,
-.social-link:focus {
+.social-link-item:hover .icon-team,
+.social-link-item:focus .icon-team,
+.social-link-item:hover,
+.social-link-item:focus {
   background-color: var(--accent-color);
   fill: var(--background-color);
 }
@@ -393,6 +397,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.client-logo-href {
+  display: flex;
   padding: 16px 32px;
   width: 170px;
   height: 92px;
@@ -402,6 +410,11 @@ img {
 }
 
 .client-list-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
   fill: #afb1b8;
 }
 
@@ -409,10 +422,10 @@ img {
   margin-left: 30px;
 }
 
-.client-item:hover .client-list-item,
-.client-item:focus .client-list-item,
-.client-item:hover,
-.client-item:focus {
+.client-logo-href:hover .client-list-item,
+.client-logo-href:focus .client-list-item,
+.client-logo-href:hover,
+.client-logo-href:focus {
   border: 1px solid #2196f3;
   fill: var(--accent-color);
 }
@@ -516,6 +529,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-social-link-item {
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
@@ -527,8 +545,8 @@ img {
   margin-left: 10px;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-link-item:hover,
+.footer-social-link-item:focus {
   background-color: var(--accent-color);
 }
 
